@@ -1,0 +1,147 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url(images/pattern-background-desktop.svg);
+    background-color: hsl(225, 100%, 94%);
+    background-repeat: no-repeat;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.container {
+    width: 450px;
+    margin: 50px auto;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 5px 1px rgb(0 0 0 / 10%);
+}
+@media (max-width: 767px) {
+    .container {
+        margin: 100px 25px;
+        width: 325px;
+    }
+}
+.head {
+    background-image: url(images/illustration-hero.svg);
+    height: 220px;
+    border-radius: 20px 20px 0 0;
+}
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.body h1 {
+    margin-top: 50px;
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+    font-size: 30px;
+}
+@media (max-width: 767px) {
+    .body h1 {
+        font-size: 25px;
+    }
+}
+.body > p {
+    margin: 10px 35px 15px;
+    line-height: 1.8;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    padding: 0 7px;
+}
+@media (max-width: 767px) {
+    .body > p {
+        margin: 10px 30px 15px;
+        padding: 0;
+    }
+}
+.plan {
+    background-color: hsl(225, 100%, 98%);
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 15px;
+    flex-direction: row;
+    margin: 0 10px;
+    align-items: center;
+}
+@media (max-width: 767px) {
+    .plan {
+        width: 275px;
+    }
+}
+.plan .price {
+    display: flex;
+}
+.plan .price .text {
+    padding-left: 20px;
+}
+@media (max-width: 767px) {
+    .plan .price .text {
+        padding-left: 10px;
+    }
+}
+.plan .price .text h4 {
+    font-weight: 900;
+    color: hsl(223, 47%, 23%);
+}
+.plan .price .text p {
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+    margin-top: 5px;
+}
+
+.plan a {
+    font-weight: 700;
+    color: hsl(245, 75%, 52%);
+    font-size: 16px;
+}
+.plan a:hover {
+    opacity: 0.8;
+    text-decoration: none;
+}
+.body .pay {
+    width: 350px;
+    margin: 30px 0;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    font-weight: 700;
+    box-shadow: 0 20px 10px 0px rgb(0 0 100 / 10%);
+}
+@media (max-width: 767px) {
+    .body .pay {
+        width: 275px;
+    }
+}
+.body .pay:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
+.body .cancel {
+    margin-bottom: 50px;
+    border: none;
+    font-weight: 900;
+    background-color: transparent;
+    cursor: pointer;
+    color: hsl(224, 23%, 55%);
+}
+.body .cancel:hover {
+    color: hsl(223, 47%, 23%);
+}
+.attribution {
+    text-align: center;
+    margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+    .attribution {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
